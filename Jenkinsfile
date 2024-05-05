@@ -6,10 +6,10 @@ pipeline {
      // ORGANIZATION_NAME
      // YOUR_DOCKERHUB_USERNAME (it doesn't matter if you don't have one)
 
-     SERVICE_NAME="nodejsapp"
+     SERVICE_NAME="tomcat"
      ORGANIZATION_NAME="bhaskarsaini27"
      YOUR_DOCKERHUB_USERNAME="sainibha"
-     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/nodejsapp-1.33:${BUILD_ID}"
+     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/{SERVICE_NAME}:${BUILD_ID}"
    }
 
    stages {
