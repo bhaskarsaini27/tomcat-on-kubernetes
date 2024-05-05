@@ -6,10 +6,10 @@ pipeline {
      // ORGANIZATION_NAME
      // YOUR_DOCKERHUB_USERNAME (it doesn't matter if you don't have one)
 
-     SERVICE_NAME="tomcat"
+     SERVICE_NAME="tomcat-on-kubernetes"
      ORGANIZATION_NAME="bhaskarsaini27"
      YOUR_DOCKERHUB_USERNAME="sainibha"
-     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/{SERVICE_NAME}:${BUILD_ID}"
+     REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/tomcat:${BUILD_ID}"
    }
 
    stages {
