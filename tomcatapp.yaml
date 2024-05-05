@@ -18,9 +18,9 @@ spec:
     spec:
       containers:
       - name: tomcat-app
-        image: sainibha/tomcat:1 #${REPOSITORY_TAG}
+        image: ${REPOSITORY_TAG}
         ports:
-          - containerPort: 3000
+          - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -34,4 +34,4 @@ spec:
   ports:
   - name: http
     targetPort: 3000
-    port: 80
+    port: 8080
